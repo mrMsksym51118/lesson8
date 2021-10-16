@@ -11,8 +11,27 @@
             box-sizing: border-box;
         }
         .produkts {
-           
+            position: absolute;
+            margin: 0px;
+            padding: 0px;
+            list-style: none;    
+            display: none;       
         }
+        .list-item:hover .produkts {
+            display: block;
+        }
+        .produkts-link {
+            text-decoration: none;
+            background-color: red;
+            color: white;
+            padding: 5px 50px;
+            display: block;
+        }
+        .produkts-link:hover {
+            background-color: green;
+        }
+        
+        
         .list {
             list-style: none;
             margin: 0px;
@@ -23,6 +42,7 @@
             display: inline-block;
             vertical-align: top;
             font-size: 15px;
+            position: relative;
         }
         .list-link {
             display: inline-block;
@@ -31,10 +51,9 @@
             color: white;
             text-decoration: none;
         }
-        .list-link:hover {
+        .list-item:hover .list-link {
             background-color: green;
-
-        }
+        }        
         .produkts-item {
             list-style: none;
         }
@@ -50,6 +69,20 @@
             <ul class="produkts">     
                 <li class="produkts-item">
                     <a href="#" class="produkts-link">Вермуты</a>
+                    <ul class="alkohol">
+                        <li class="alkohol-item">
+                            <a href="#" class="alkohol-link">Сухой</a>
+                        </li>
+                        <li class="alkohol-item">
+                            <a href="#" class="alkohol-link">Белый</a>
+                        </li>
+                        <li class="alkohol-item">
+                            <a href="#" class="alkohol-link">Сладкий</a>
+                        </li>
+                        <li class="alkohol-item">
+                            <a href="#" class="alkohol-link">Розовый</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="produkts-item">
                     <a href="#" class="produkts-link">Ликеры</a>
