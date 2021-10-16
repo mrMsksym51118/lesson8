@@ -10,15 +10,60 @@
         * {
             box-sizing: border-box;
         }
+        .produkts {
+           
+        }
+        .list {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            font-size: 0px;
+        }
+        .list-item {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 15px;
+        }
+        .list-link {
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+        }
+        .list-link:hover {
+            background-color: green;
+
+        }
+        .produkts-item {
+            list-style: none;
+        }
     </style>
 </head>
 <body>
     <ul class="list">
         <li class="list-item">
-            <a href="#" class="list-link">Главная</a>
+            <a href="#" class="list-link">Главная</a>            
         </li>
         <li class="list-item">
             <a href="#" class="list-link">Алкогольные напитки</a>
+            <ul class="produkts">     
+                <li class="produkts-item">
+                    <a href="#" class="produkts-link">Вермуты</a>
+                </li>
+                <li class="produkts-item">
+                    <a href="#" class="produkts-link">Ликеры</a>
+                </li>
+                <li class="produkts-item">
+                    <a href="#" class="produkts-link">Виски</a>
+                </li>
+                <li class="produkts-item">
+                    <a href="#" class="produkts-link">Коньял</a>
+                </li>
+                <li class="produkts-item">
+                    <a href="#" class="produkts-link">Ром</a>
+                </li>
+            </ul>            
         </li>
         <li class="list-item">
             <a href="#" class="list-link">Шоты</a>
@@ -27,7 +72,7 @@
             <a href="#" class="list-link">Экстримы</a>
         </li>
         <li class="list-item">
-            <a href="#" class="list-link">Без алкогольные</a>/li>
+            <a href="#" class="list-link">Безалкогольные</a>
     </ul>
     
 </body>
