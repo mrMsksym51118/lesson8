@@ -26,11 +26,11 @@
             color: white;
             padding: 5px 50px;
             display: block;
+            width: 171px;
         }
         .produkts-link:hover {
             background-color: green;
-        }
-        
+        }        
         
         .list {
             list-style: none;
@@ -42,7 +42,7 @@
             display: inline-block;
             vertical-align: top;
             font-size: 15px;
-            position: relative;
+            position: relative;           
         }
         .list-link {
             display: inline-block;
@@ -50,13 +50,44 @@
             background-color: blue;
             color: white;
             text-decoration: none;
+            
         }
         .list-item:hover .list-link {
             background-color: green;
+
         }        
-        .produkts-item {
-            list-style: none;
+        .produkts-item {            
+            display: inline-block;
+            vertical-align: top;
+            font-size: 15px;
+            position: relative;            
+            
         }
+        .vermouth {
+            position: absolute;
+            margin: 0px;
+            padding: 15px 50px;
+            list-style: none; 
+            display: none;
+            left: 120px;
+            top: -15px;          
+            
+        }
+        .vermouth-link {
+            display:inline-block;
+            padding: 5px 15px;
+            background-color: purple;
+            color: white;
+            text-decoration: none;
+            width: 80px;
+        }
+        .produkts-item:hover .vermouth {
+            display: block;
+        }
+        .vermouth-link:hover {
+            background-color: green;
+        }
+                
     </style>
 </head>
 <body>
@@ -69,23 +100,40 @@
             <ul class="produkts">     
                 <li class="produkts-item">
                     <a href="#" class="produkts-link">Вермуты</a>
-                    <ul class="alkohol">
-                        <li class="alkohol-item">
-                            <a href="#" class="alkohol-link">Сухой</a>
-                        </li>
-                        <li class="alkohol-item">
-                            <a href="#" class="alkohol-link">Белый</a>
-                        </li>
-                        <li class="alkohol-item">
-                            <a href="#" class="alkohol-link">Сладкий</a>
-                        </li>
-                        <li class="alkohol-item">
-                            <a href="#" class="alkohol-link">Розовый</a>
-                        </li>
+                        <ul class="vermouth">
+                            <li class="vermouth-item">
+                                <a href="#" class="vermouth-link">Сухой</a>
+                            </li>
+                            <li class="vermouth-item">
+                                <a href="#" class="vermouth-link">Белый</a>
+                            </li>
+                            <li class="vermouth-item">
+                                <a href="#" class="vermouth-link">Сладкий</a>
+                            </li>
+                            <li class="vermouth-item">
+                                <a href="#" class="vermouth-link">Розовый</a>
+                            </li>
                     </ul>
                 </li>
                 <li class="produkts-item">
                     <a href="#" class="produkts-link">Ликеры</a>
+                    <ul class="liqueurs">
+                        <li class="liqueurs-item">
+                            <a href="#" class="liqueurs-link">Фруктовые</a>
+                        </li>
+                        <li class="liqueurs-item">
+                            <a href="#" class="liqueurs-link">Кофейные</a>
+                        </li>
+                        <li class="liqueurs-item">
+                            <a href="#" class="liqueurs-link">Ягодные</a>
+                        </li>
+                        <li class="vermouth-item">
+                            <a href="#" class="liqueurs-link">Ореховые</a>
+                        </li>
+                        <li class="liqueurs-item">
+                            <a href="#" class="liqueurs-link">Сливочные</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="produkts-item">
                     <a href="#" class="produkts-link">Виски</a>
@@ -107,6 +155,12 @@
         <li class="list-item">
             <a href="#" class="list-link">Безалкогольные</a>
     </ul>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Porro provident natus ipsa optio ducimus voluptatem ex nisi
+         temporibus debitis a consequuntur error, nobis quis quasi, 
+         dolorem similique delectus, repudiandae sunt.
+    </p>
     
 </body>
 </html>
